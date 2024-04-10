@@ -1,0 +1,18 @@
+.Central-texto{
+display: flex;
+justify-content: center;
+gap: 20px
+}
+.alineamiento{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+}
+.tamaño{
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+}
+.caja{
+    background: url("../Ejercitacion/images\ \(3\).jpeg");
+    background-size: cover;
+}

@@ -1,0 +1,14 @@
+1-Css permite para cambiar el comportamiento de algunos “codigos” en un contenedor,
+Esto permite cambiar un texto o poner un borde.
+2-La propiedad que tiene css es que define el espacio de los elementos hijo dentro de un contenedor flex o grid. Para contenedores flexibles, controlando el largo de sus celdas y su eje principal  y sus espacios, mientras que en contenedores de cuadrícula, define el espacio entre celdas.
+
+3-justify-content afecta la alineación a lo largo del eje principal, mientras que align-items afecta la alineación en el eje transversal.
+4- La propiedad de CSS para definir el tamaño de filas y columnas en un contenedor grid es:
+grid-template-rows: Define el tamaño de las filas.
+grid-template-columns: Define el tamaño de las columnas.
+
+5-display: flex: Organiza los elementos secundarios a lo largo de una sola                         dirección (fila o columna).
+display: grid: Organiza los elementos secundarios en una cuadrícula bidimensional, permitiendo un control más preciso y flexibilidad en el diseño.
+6-Para alinear elementos hijos dentro de un contenedor flex en CSS:
+Usamos align-items para alinear verticalmente.
+Usamos justify-content para alinear horizontalmente.
