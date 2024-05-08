@@ -1,0 +1,11 @@
+.Central-texto {
+  text-align: center;
+}
+
+.fondotexto1 {
+  background-color: rgb(113, 198, 209);
+  border-radius: 5%;
+  width: 200px;
+  height: 38px;
+  border-radius: 15%;
+}
