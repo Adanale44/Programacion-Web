@@ -1,11 +1,16 @@
-import { Prueba } from "./components/prueba";
+import React from 'react';
+import './App.css';
+import CharacterList from './components/CharacterList';
 
-function App() {
+const App = () => {
   return (
-    <>
-      Hola mundo
-      <Prueba nombre={"Adan"} apellido={"Coronel"} />
-    </>
+    <div className="App">
+      <header className="App-header">
+        <h1>Rick and Morty Characters</h1>
+      </header>
+      <CharacterList />
+    </div>
   );
-}
+};
+
 export default App;

@@ -1,0 +1,25 @@
+.App {
+    text-align: center;
+  }
+  
+  .App-header {
+    background-color: #249b38;
+    padding: 20px;
+    color: #249b38;
+  }
+  
+  .character-list {
+    display: flex;
+    justify-content: center;
+    color: rgb(12, 24, 24);
+  }
+  
+  .character-card {
+    text-align: center;
+    width: 100px;
+  }
+  
+  .character-image {
+    width: 50px;
+    height: 50px;
+  }
