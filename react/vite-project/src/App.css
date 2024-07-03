@@ -1,25 +1,18 @@
-.App {
-    text-align: center;
-  }
-  
-  .App-header {
-    background-color: #249b38;
-    padding: 20px;
-    color: #249b38;
-  }
-  
-  .character-list {
-    display: flex;
-    justify-content: center;
-    color: rgb(12, 24, 24);
-  }
-  
-  .character-card {
-    text-align: center;
-    width: 100px;
-  }
-  
-  .character-image {
-    width: 50px;
-    height: 50px;
-  }
+.Bode-con-sombra {
+  border: 1px solid #be6b1d; /* Borde sólido gris */
+  box-shadow: 0 4px 15px rgba(236, 71, 6, 0.932); /* Sombra difusa */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  width: 300px; /* Ancho del contenedor */
+  margin: 0 auto; /* Centrar horizontalmente */
+  background-color: #e465e9; /* Color de fondo */
+}
+.borde-color {
+  border: 1px solid #c07373; /* Borde sólido gris */
+  box-shadow: 0 0 10px rgba(221, 11, 11, 0.973); /* Sombra difusa */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  width: 250px; /* Ancho del contenedor */
+  margin: 0 auto; /* Centrar horizontalmente */
+  background-color: #e47171; /* Color de fondo */
+}
