@@ -6,7 +6,7 @@ body {
 
 header {
   background-color: #333;
-  color: #fff;
+  color: #a03939;
   padding: 1rem;
 }
 
@@ -24,14 +24,14 @@ nav ul li {
 nav ul li button {
   background: none;
   border: none;
-  color: #fff;
+  color: #bd5d5d;
   cursor: pointer;
   font-size: 1rem;
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #3f3b7a;
+  color: #c22424;
   text-align: center;
   padding: 1rem;
   position: fixed;
@@ -42,3 +42,8 @@ footer {
 main {
   padding: 2rem;
 }
+.caja{
+  background:color red;
+  background-size: cover;
+}
+

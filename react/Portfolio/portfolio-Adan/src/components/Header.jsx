@@ -7,6 +7,7 @@ const Header = ({ onNavClick }) => {
         <ul>
           <li><button onClick={() => onNavClick('home')}>Home</button></li>
           <li><button onClick={() => onNavClick('projects')}>Projects</button></li>
+          <li><button onClick={() => onNavClick('contactos')}>Contactos</button></li>
         </ul>
       </nav>
     </header>
