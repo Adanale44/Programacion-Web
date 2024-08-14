@@ -46,4 +46,10 @@ main {
   background:color red;
   background-size: cover;
 }
-
+.contenedor_futer{
+  height: 100px;
+}
+.contenedor_img{
+  height: 100%;
+  object-fit: cover;
+}
