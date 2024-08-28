@@ -2,11 +2,13 @@ import React from 'react';
 
 const Header = ({ onNavClick }) => {
   return (
-    <header>
+    <header className='header' >
       <nav>
         <ul>
-          <li><button onClick={() => onNavClick('home')}>Home</button></li>
+          <div className='button'>
+          <li ><button onClick={() => onNavClick('home')}>Home</button></li>
           <li><button onClick={() => onNavClick('projects')}>Projects</button></li>
+          </div>
         </ul>
       </nav>
     </header>

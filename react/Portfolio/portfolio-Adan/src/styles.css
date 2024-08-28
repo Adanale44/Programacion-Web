@@ -1,27 +1,21 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-header {
+.header {
   background-color: #333;
   color: #a03939;
   padding: 1rem;
 }
 
-nav ul {
+.navul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-nav ul li {
+.navulli {
   display: inline;
   margin-right: 1rem;
 }
 
-nav ul li button {
+.button{
   background: none;
   border: none;
   color: #bd5d5d;
@@ -29,7 +23,7 @@ nav ul li button {
   font-size: 1rem;
 }
 
-footer {
+.footer{
   background-color: #3f3b7a;
   color: #c22424;
   text-align: center;
@@ -39,7 +33,7 @@ footer {
   width: 100%;
 }
 
-main {
+.main {
   padding: 2rem;
 }
 .caja{
@@ -52,4 +46,10 @@ main {
 .contenedor_img{
   height: 100%;
   object-fit: cover;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }

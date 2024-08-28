@@ -38,5 +38,12 @@
 }
 
 .read-the-docs {
-  color: #888;
+  color: #a12323;
 }
+
+.Central-texto{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  }

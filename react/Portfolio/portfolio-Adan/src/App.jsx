@@ -20,12 +20,14 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="app-container">
       <Header onNavClick={setCurrentPage} />
-      {renderContent()}
+      <main className="main-content">
+        {renderContent()}
+      </main>
       <Footer />
     </div>
   );
 };
 
-export default App;   
+export default App;
