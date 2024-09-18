@@ -10,6 +10,11 @@
   padding: 0;
 }
 
+.cajaa{
+  background: url("../src/assets/iconos/Minecraft-creeper-face.jpg");
+  background-size: 125%;
+}
+
 .navulli {
   display: inline;
   margin-right: 1rem;
