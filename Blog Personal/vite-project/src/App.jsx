@@ -1,48 +1,65 @@
 import React from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
 import './App.css'
-import { useState } from 'react';
-import { useEffect } from 'react';
+import { useEffect, useState } from "react";
+import supabase from "./lib/helpen/supabaseCliente";
 
-function App() {
-  return (
-    <div>
-    <Header />
-    <a>Hola</a>
-    <Footer />
-  </div>
-);
-}
+export default function App() {
+ const [user, setUser] = useState(null);
 
-export default function App(){
-  const [user, setUser] = useState(null);
-  useEffect(() => {
-    const getSession = async () =>{
-      const {data, error} = await supabase.auth.getSession();
-      if (error) {
-        console.log(error);
-      } else {
-        setUser(data?.session?.user);
-      }
-    };
-    getSession();
-  }, []);
-  const handleClick = async () => {
-    const {data,error} = supabase.auth.signInWinthOAuth({
-      provider:'github'
-    })
-    if (error) {
-      console.log(error);
-    }else{
-      console.log(data);
-    }
-  };
+ useEffect(() => {
+   const session = supabase.auth.getSession();
+   setUser(session?.user);
+   const {
+     data: { subscription },
+   } = supabase.auth.onAuthStateChange((event, session) => {
+     switch (event) {
+       case "SIGNED_IN":
+         setUser(session?.user);
+         break;
+       case "SIGNED_OUT":
+         setUser(null);
+         break;
+       default:
+     }
+   });
+   return () => {
+     subscription.unsubscribe();
+   };
+ }, []);
 
-  return(
+ const login = async () => {
+   await supabase.auth.signInWithOAuth({
+     provider: "github",
+   });
+ };
+ const logout = async () => {
+   await supabase.auth.signOut();
+ };
+
+ return (
+  <div>
     <header>
-    <button onClick={handleClick}>conectar con github</button>
+      <div>
+        {user ? (
+          <div>
+            <h1>Authenticated</h1>
+            <button onClick={logout}>Logout</button>
+            <h1>hola</h1>
+          </div>
+        ) : (
+          <button onClick={login}>Login with Github</button>
+        )}
+      </div>
     </header>
-  )
+    <main>
+
+    </main>
+    <footer>
+      
+    </footer>
+   </div>
+ );
 }
+ 
+
 
